@@ -96,23 +96,23 @@ function Cercles() {
 }
 
 function Container() {
-  const [result, setResult] = useState('');
+  // const [result, setResult] = useState('');
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch('http://localhost:8080/');
-        const data = await response.json();
-        setResult(data);
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    };
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const response = await fetch('http://localhost:8080/');
+  //       const data = await response.json();
+  //       setResult(data);
+  //     } catch (error) {
+  //       console.error('Error fetching data:', error);
+  //     }
+  //   };
 
-    fetchData();
-  }, []);
+  //   fetchData();
+  // }, []);
 
-  console.log(result);
+  // console.log(result);
 
   return (
       <>
