@@ -1,8 +1,6 @@
 import "./assets/css/bootstrap.min.css";
 import "./assets/css/LineIcons.3.0.css";
 import "./assets/css/main.css";
-import React, { useState, useEffect } from 'react';
-import WebService from "./WebService";
 
 function Head() {
   return (
@@ -50,17 +48,13 @@ function Header() {
                                             </ul>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse"
-                                                data-bs-target="#submenu-1-2" aria-controls="navbarSupportedContent"
-                                                aria-expanded="false" aria-label="Toggle navigation">Classement</a>
+                                            Classement
                                             <ul class="sub-menu collapse" id="submenu-1-2">
                                                 <li class="nav-item"><a href="login.html?etat=1">NBA</a></li>
                                             </ul>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse"
-                                                data-bs-target="#submenu-1-3" aria-controls="navbarSupportedContent"
-                                                aria-expanded="false" aria-label="Toggle navigation">Scores</a>
+                                            Scores
                                             <ul class="sub-menu collapse" id="submenu-1-3">
                                                 <li class="nav-item"><a href="login.html?etat=0">NBA</a></li>
                                                 <li class="nav-item"><a href="creationArticle.html">FootBall</a></li>
@@ -146,7 +140,7 @@ function Container() {
                                     <tbody>
                                         <tr>
                                             <td>1</td>
-                                            <td><img class="rounded-circle me-2" width="30" height="30" src="assets/images/profile/user-1.jpg"/>Airi Satou</td>    
+                                            <td>Airi Satou</td>    
                                             <td>SAC</td>
                                             <td>13</td>
                                             <td>13</td>
@@ -185,9 +179,7 @@ function Section() {
 function Scroll() {
   return (
       <>
-        <a href="#" class="scroll-top">
           <i class="lni lni-chevron-up"></i>
-        </a>
       </>
   );
 }
